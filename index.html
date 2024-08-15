@@ -155,9 +155,12 @@
     <script>
         // Confetti Effect on Page Load
         confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 }
+            particleCount: 500,
+            spread: 100,
+            origin: { x: 0.5, y: 0.5 },
+            width: window.innerWidth,
+            height: window.innerHeight,
+            zIndex: 9999
         });
 
         // Button Reveal Logic
