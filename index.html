@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%; 
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .birthday-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .birthday-header img {
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+        .birthday-header h1 {
+            margin: 0;
+        }
+        h1, h2, h3, h4, p {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        ol, ul {
+            margin: 0 auto;
+            padding: 0;
+            list-style-position: inside;
+            text-align: left;
+        }
+        .reveal-content {
+            display: none;
+            margin-top: 20px;
+        }
+        .reveal-content img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transition: opacity 0.5s ease;
+        }
+        .reveal-content h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0 0;
+        }
+        .reveal-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 20px auto;
+        }
+        .reveal-button:hover {
+            background-color: #0056b3;
+        }
+        .birthday-footer {
+            margin-top: 20px;
+            padding-bottom: 50px; /* Added space at the bottom */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="birthday-header">
+            <img src="https://i.gifer.com/5edn.gif" alt="birthday gif"/>
+            <h1>IT'S YOUR BIRTHDAY</h1>
+            <img src="https://i.gifer.com/5edn.gif" alt="birthday gif"/>
+        </div>
+
+        <hr />
+
+        <center><iframe src="https://drive.google.com/file/d/1SFnyW_ZzTV2ltLsNMkcQk7L6rMesjTAO/preview" width="640" height="480" allow="autoplay"></iframe></center>
+        <h2>Wesoamo Zempare</h2>
+        <h4>(aka Wessy)</h4>
+
+        <h4>It has been several trips around the sun for you and though your shine may be in competition with the constellations, we on earth need you because...</h4>
+
+        <!-- Button 1 -->
+        <button class="reveal-button">Click Here</button>
+        <div class="reveal-content">
+            <img src="https://images2.alphacoders.com/653/653004.jpg" alt="Joy from inside out"/>
+            <h2>🥳🥳🥳You bring us so much Joyyyyyy🥳🥳🥳</h2>
+        </div>
+
+        <h4>Now, there are a few other things we appreciate you for...</h4>
+        <ol>
+            <li>Your humour, much like Joy's.</li>
+            <li>Your smile. That is a sight to behold and brings a shine to even the darkest of hearts.</li>
+            <li>Your intelligence. Your achievements speak for themself.</li>
+            <li>Your dedication to excellence and improvement of those around you</li>
+        </ol>
+
+        <h4>So, on this birthday that represents another opportunity to grace us with your presence, I hope you get to:</h4>
+
+        <!-- Button 2 -->
+        <button class="reveal-button">Click Here</button>
+        <div class="reveal-content">
+            <img src="https://www.martinschocolatier.co.uk/cdn/shop/products/heart-pink-new.webp?v=1673005993" alt="box of chocolate"/>
+            <h2>🥳🥳🥳eat a lot of chocolate🥳🥳🥳</h2>
+        </div>
+
+        <ol>
+            <li>Do all the things that make you happy.</li>
+            <li>Get a bouquet of your favorite flowers...</li>
+
+            <!-- Button 3 -->
+            <button class="reveal-button">Click Here</button>
+            <div class="reveal-content">
+                <img src="https://www.photofunky.net/output/image/f/0/3/1/f03199/photofunky.gif" alt="a bouquet of roses"/>
+                <h2>Flowers from me to you!</h2>
+            </div>
+
+            <li>Most importantly be as happy as you look in this picture:</li>
+            <center><iframe src="https://drive.google.com/file/d/1SHJH2g-qZDa_3n0NiJKH-hFUxjQd8QWI/preview" width="640" height="480" allow="autoplay"></iframe>
+            </center>
+        </ol>
+
+        <h4>So go out there and live your best life🥳🥳🥳</h4>
+        <center><iframe src="https://drive.google.com/file/d/1SIjnMkIJNvXu0hQH_sUT5iHVEQ8zgk8z/preview" width="640" height="480" allow="autoplay"></iframe>
+        </center>
+
+        <!-- The "İyi ki doğdun!!!" at the end -->
+        <div class="birthday-footer">
+            <h1>İYİ Kİ DOĞDUN!!! HAPPY BIRTHDAY!!!</h1>
+            <center><iframe src="https://drive.google.com/file/d/1SE1jHaiRYyr-YUpghyWwqiHrXQjFzE_Z/preview" width="640" height="480" allow="autoplay"></iframe></center>
+            <h4>That gold looks stunning on you, keep shining!</h4>
+        </div>
+    </div>
+
+    <!-- Confetti Script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        // Confetti Effect on Page Load
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+
+        // Button Reveal Logic
+        document.querySelectorAll('.reveal-button').forEach(function(button, index) {
+            button.addEventListener('click', function() {
+                const revealContent = document.querySelectorAll('.reveal-content')[index];
+                if (revealContent.style.display === 'none' || revealContent.style.display === '') {
+                    revealContent.style.display = 'block';
+                } else {
+                    revealContent.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
